@@ -12,6 +12,11 @@
 		4B45FF3224DB46FC0049922D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B45FF3024DB46FC0049922D /* Main.storyboard */; };
 		4B45FF3424DB46FE0049922D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B45FF3324DB46FE0049922D /* Assets.xcassets */; };
 		4B45FF3724DB46FE0049922D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B45FF3524DB46FE0049922D /* LaunchScreen.storyboard */; };
+		4B45FF4824DB56CF0049922D /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45FF4724DB56CF0049922D /* Dog.swift */; };
+		4B45FF4A24DB56E40049922D /* DogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45FF4924DB56E40049922D /* DogController.swift */; };
+		4B45FF4C24DB5A680049922D /* DogError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45FF4B24DB5A680049922D /* DogError.swift */; };
+		4B45FF4E24DB5E650049922D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45FF4D24DB5E650049922D /* UIViewControllerExtension.swift */; };
+		4B45FF5024DB62380049922D /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B45FF4F24DB62380049922D /* DogViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		4B45FF3324DB46FE0049922D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B45FF3624DB46FE0049922D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B45FF3824DB46FE0049922D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B45FF4724DB56CF0049922D /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		4B45FF4924DB56E40049922D /* DogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogController.swift; sourceTree = "<group>"; };
+		4B45FF4B24DB5A680049922D /* DogError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogError.swift; sourceTree = "<group>"; };
+		4B45FF4D24DB5E650049922D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		4B45FF4F24DB62380049922D /* DogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,8 @@
 		4B45FF3F24DB48BB0049922D /* HelpersAndExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				4B45FF4B24DB5A680049922D /* DogError.swift */,
+				4B45FF4D24DB5E650049922D /* UIViewControllerExtension.swift */,
 			);
 			path = HelpersAndExtensions;
 			sourceTree = "<group>";
@@ -118,6 +130,7 @@
 		4B45FF4424DB48F90049922D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B45FF4F24DB62380049922D /* DogViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -125,6 +138,7 @@
 		4B45FF4524DB48FE0049922D /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4B45FF4924DB56E40049922D /* DogController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -132,6 +146,7 @@
 		4B45FF4624DB49070049922D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4B45FF4724DB56CF0049922D /* Dog.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,8 +222,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B45FF4C24DB5A680049922D /* DogError.swift in Sources */,
+				4B45FF4A24DB56E40049922D /* DogController.swift in Sources */,
+				4B45FF4E24DB5E650049922D /* UIViewControllerExtension.swift in Sources */,
 				4B45FF2B24DB46FC0049922D /* AppDelegate.swift in Sources */,
 				4B45FF2D24DB46FC0049922D /* SceneDelegate.swift in Sources */,
+				4B45FF4824DB56CF0049922D /* Dog.swift in Sources */,
+				4B45FF5024DB62380049922D /* DogViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

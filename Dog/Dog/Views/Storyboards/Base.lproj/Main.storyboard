@@ -1,8 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HO7-5K-KFf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Dog View Controller-->
+        <scene sceneID="mba-cZ-73H">
+            <objects>
+                <viewController id="HO7-5K-KFf" customClass="DogViewController" customModule="Dog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="215-gj-Khp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Enter a dog breed here..." translatesAutoresizingMaskIntoConstraints="NO" id="DC6-bW-1el">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YmH-jk-6a8">
+                                <rect key="frame" x="20" y="104" width="374" height="357"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(breed)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-F0-UHf">
+                                <rect key="frame" x="134" y="553" width="147" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="g6c-F0-UHf" firstAttribute="top" secondItem="YmH-jk-6a8" secondAttribute="bottom" constant="92" id="8Hx-R3-MdI"/>
+                            <constraint firstItem="DC6-bW-1el" firstAttribute="leading" secondItem="HUW-l1-ql3" secondAttribute="leading" id="Ius-2K-i4f"/>
+                            <constraint firstItem="DC6-bW-1el" firstAttribute="top" secondItem="HUW-l1-ql3" secondAttribute="top" id="Pkx-JC-vYt"/>
+                            <constraint firstItem="g6c-F0-UHf" firstAttribute="leading" secondItem="HUW-l1-ql3" secondAttribute="leading" constant="134" id="UR8-Jp-M9j"/>
+                            <constraint firstItem="HUW-l1-ql3" firstAttribute="bottom" secondItem="g6c-F0-UHf" secondAttribute="bottom" constant="268" id="aWO-Vv-drC"/>
+                            <constraint firstItem="HUW-l1-ql3" firstAttribute="trailing" secondItem="YmH-jk-6a8" secondAttribute="trailing" constant="20" id="jaY-kI-9p1"/>
+                            <constraint firstItem="YmH-jk-6a8" firstAttribute="leading" secondItem="HUW-l1-ql3" secondAttribute="leading" constant="20" id="lIr-HO-FsZ"/>
+                            <constraint firstItem="HUW-l1-ql3" firstAttribute="trailing" secondItem="g6c-F0-UHf" secondAttribute="trailing" constant="133" id="t13-rY-vpa"/>
+                            <constraint firstItem="YmH-jk-6a8" firstAttribute="top" secondItem="DC6-bW-1el" secondAttribute="top" constant="60" id="ucG-Mo-42o"/>
+                            <constraint firstItem="DC6-bW-1el" firstAttribute="trailing" secondItem="HUW-l1-ql3" secondAttribute="trailing" id="zg7-Nt-NX8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HUW-l1-ql3"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImageView" destination="YmH-jk-6a8" id="K5u-rn-Qzr"/>
+                        <outlet property="dogLabel" destination="g6c-F0-UHf" id="Fln-oo-KA5"/>
+                        <outlet property="dogSearchBar" destination="DC6-bW-1el" id="mIQ-5e-hD4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujn-CY-fqf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="1.3392857142857142"/>
+        </scene>
+    </scenes>
 </document>
