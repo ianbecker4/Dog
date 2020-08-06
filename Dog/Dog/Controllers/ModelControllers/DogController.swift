@@ -39,6 +39,7 @@ class DogController {
     static func fetchImage(for dog: Dog, completion: @escaping (Result<UIImage, DogError>) -> Void) {
         
         guard let imageURL = URL(string: dog.message) else {return completion(.failure(.invalidURL))}
+        print(imageURL)
         
         URLSession.shared.dataTask(with: imageURL) { (data, _, error) in
             
@@ -54,4 +55,36 @@ class DogController {
             
         }.resume()
     }
+    
+//    static func fetchBreed(completion: @escaping (Result<[Breed], DogError>) -> Void) {
+//
+//        guard let url = URL(string: "https://dog.ceo/api/breeds/list/all") else {return completion(.failure(.invalidURL))}
+//        print(url)
+//
+//        URLSession.shared.dataTask(with: url) { (data, _, error) in
+//
+//            if let error = error {
+//                return completion(.failure(.thrownError(error)))
+//            }
+//
+//            guard let data = data else {return completion(.failure(.noData))}
+//
+//            do {
+//                let topLevelDictionary = try JSONDecoder().decode(TopLevelObject.self, from: data)
+//                let secondLevelArray = topLevelDictionary.message
+//
+//                let arrayOfBreeds = [Breed] = []
+//
+//                for dict in secondLevelArray {
+//                    let breed = dict.breed
+//                    arrayOfBreeds.append(breed)
+//                }
+//
+//            } catch {
+//
+//            }
+//
+//        }.resume()
+//
+//    }
 }// End of class

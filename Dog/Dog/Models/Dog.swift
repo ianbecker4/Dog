@@ -13,3 +13,15 @@ struct Dog: Decodable {
     let message: String
     
 }// End of struct
+
+//struct TopLevelObject: Decodable {
+//
+//    let message: [Breed]
+//
+//}
+//
+//struct Breed: Decodable {
+//
+//    let breed: String
+//
+//}
